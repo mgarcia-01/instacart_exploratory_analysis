@@ -1,4 +1,6 @@
 # Project insta_publicOpenSource
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fpimikeymike%2Finstacart_exploratory_analysis.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fpimikeymike%2Finstacart_exploratory_analysis?ref=badge_shield)
+
 Used for instacrts public open source datasets and analysis
 See LICENSE.MD file for project Licensing terms and conditions.
 ## Information 
@@ -10,3 +12,5 @@ Terms and Conditions. For information about the contents of the files, see this 
 
 ### Apache License Version 2.0, January 2004
 Applies to derivative works of this project and is exempt from Project License. This is applicable to only specic source code in which the author copyrighted under Apache License Version 2.0. All other source code is not exempt and will follow project license; unless packages are licensed under different  copyright. 
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fpimikeymike%2Finstacart_exploratory_analysis.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fpimikeymike%2Finstacart_exploratory_analysis?ref=badge_large)
