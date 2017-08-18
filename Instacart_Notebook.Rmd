@@ -14,10 +14,23 @@ df_print: paged
 
 INS0923920381WD202C
 
+## {.tabset .tabset-fade .tabset-pills}
+### Data Overview
 Instacart Analysis is derived from the R scripts in the insta_public_analysis project. See end of file for license details.
 
 ```{r, echo=FALSE}
 #source(file.path(getwd(),paste("Run_InstacartSourceFiles",".R",sep = "")), verbose = FALSE)
+```
+
+```{r, include = TRUE, echo = FALSE}
+userCounts <- function(x) {
+  no_Users <- length(unique(ordersPrior$user_id))
+  no_Orders <- length(unique(ordersPrior$order_id))
+  a <- as.data.frame(cbind(no_Users,no_Orders))
+  return(a)
+}
+
+userCounts <- userCounts()
 ```
 
 
@@ -27,7 +40,26 @@ The summary below represents the frequency distribution of the number of orders 
 ```{r, echo=FALSE}
 frqSummary()
 ```
+### License and Notices
+##### Data Source:
+The Instacart Online Grocery Shopping Dataset 2017”, Accessed from https://www.instacart.com/datasets/grocery-shopping-2017 on July 2017
 
+###### This project was developed on R System for Statistical Computation and Graphics. All source code is in R Programming Language. For information see https://www.r-project.org/about.html
+
+##### License and Copyright
+     Project: insta_public_analysis project
+     Copyright(C) Michael Garcia 2017. All Rights Reserved.
+     GNU General Public License Version 3
+     Contact Author: mgar_datascience at protonmail dot com     
+                                                                                 
+     This program is distributed in the hope that it will be useful,             
+     but WITHOUT ANY WARRANTY; without even the implied warranty of              
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the               
+     GNU General Public License Version 3 for more details.                      
+     See http://www.gnu.org/licenses for full license. Additional Licenses 
+     may apply. Run source(listPckg) for a list of installed packages and
+     licenses.
+##
 
 #### Users and Day of Week 
 
@@ -219,27 +251,5 @@ rmarkdown::paged_table(top_products(department = "frozen", aisle = "ice cream ic
 
 \pagebreak
 
-##### Data Source:
-The Instacart Online Grocery Shopping Dataset 2017”, Accessed from https://www.instacart.com/datasets/grocery-shopping-2017 on July 2017
 
-###### This project was developed on R System for Statistical Computation and Graphics. All source code is in R Programming Language. For information see https://www.r-project.org/about.html
-
-##### License and Copyright
-     Project: insta_public_analysis project
-     Copyright(C) Michael Garcia 2017. All Rights Reserved.
-     GNU General Public License Version 3
-     Contact Author: mgar_datascience at protonmail dot com     
-                                                                                 
-     This program is distributed in the hope that it will be useful,             
-     but WITHOUT ANY WARRANTY; without even the implied warranty of              
-     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the               
-     GNU General Public License Version 3 for more details.                      
-     See http://www.gnu.org/licenses for full license. Additional Licenses 
-     may apply. Run source(listPckg) for a list of installed packages and
-     licenses.
-##### Also Contains Source from: 
-     Philipp Spachtholz as permitted by Apache 2.0 License 
-     http://www.apache.org/licenses/LICENSE-2.0
-     Repository
-     https://www.kaggle.com/philippsp/exploratory-analysis-instacart/code
 
